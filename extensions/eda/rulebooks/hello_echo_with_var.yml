@@ -9,4 +9,4 @@
       condition: event.i == 1
       action:
         debug:
-          msg: "Hello world with {{ my_msg }}"
+          msg: "Hello world with a message {{ my_msg }}"
