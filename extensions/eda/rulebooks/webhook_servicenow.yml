@@ -6,7 +6,7 @@
         port: 5005
   rules:
     - name: ServiceNow Incident
-      condition: event.payload.number in "INC"
+      condition: event.payload.number is search("INC", ignorecase=false)
       action:
         debug:
           msg: "ServiceNow Incident received!"
